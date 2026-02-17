@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAR POS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>BAR POS SYSTEM</h1>
+
+  <!-- テーブル切替 -->
+  <div class="top-bar">
+    <button onclick="switchTable('A')" id="tableA" class="active">テーブルA</button>
+    <button onclick="switchTable('B')" id="tableB">テーブルB</button>
+    <button onclick="switchTable('C')" id="tableC">テーブルC</button>
+  </div>
+
+  <!-- ドリンク -->
+  <h2>ドリンク</h2>
+  <div id="drinkMenu"></div>
+
+  <!-- フード -->
+  <h2>フード</h2>
+  <div id="foodMenu"></div>
+
+  <!-- 注文一覧 -->
+  <h2>注文一覧</h2>
+  <ul id="orderList"></ul>
+
+  <!-- 合計 -->
+  <div id="totalAmount">合計: 0円</div>
+
+  <!-- 会計 -->
+  <button class="checkout" onclick="checkout()">会計する</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
