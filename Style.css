@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* タイトル */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+/* テーブル切替 */
+.top-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.top-bar button {
+  flex: 1;
+  padding: 22px 0;
+  font-size: 22px;
+  border-radius: 16px;
+  border: 3px solid #fff;
+  background: #111;
+  color: #fff;
+}
+
+.top-bar button.active {
+  background: #ff9800;
+  color: #000;
+}
+
+/* メニュー見出し */
+h2 {
+  font-size: 26px;
+  margin-top: 25px;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 6px;
+}
+
+/* メニューグリッド */
+#drinkMenu,
+#foodMenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+#drinkMenu button,
+#foodMenu button {
+  padding: 28px 10px;
+  font-size: 24px;
+  border-radius: 16px;
+  border: 3px solid #fff;
+  background: #222;
+  color: #fff;
+  min-height: 100px;
+}
+
+/* 注文リスト */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 18px;
+  margin-bottom: 14px;
+  border-radius: 16px;
+  font-size: 24px;
+  border: 3px solid #fff;
+}
+
+/* 未提供 */
+li.not-served {
+  background: #550000;
+}
+
+/* 提供済み */
+li.served {
+  background: #004d00;
+}
+
+/* 注文内ボタン */
+li button {
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 14px 18px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+}
+
+li button:nth-child(1) {
+  background: #666;
+  color: #fff;
+}
+
+li button:nth-child(2) {
+  background: #ff9800;
+  color: #000;
+}
+
+li button:nth-child(3) {
+  background: crimson;
+  color: #fff;
+}
+
+/* 合計 */
+#totalAmount {
+  font-size: 30px;
+  margin-top: 15px;
+  text-align: right;
+}
+
+/* 会計ボタン */
+.checkout {
+  width: 100%;
+  padding: 30px;
+  font-size: 32px;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 25px;
+  font-weight: bold;
+}
